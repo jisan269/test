@@ -1,0 +1,252 @@
+
+// input Note :- Take all trade up with rule for compounding trade
+
+// input your data 
+
+// 1st trade
+let invest1 = 5;   //invest amount 
+let return_in_per1 = 90;   // % return
+let direction1 = "up";  //trade direction for profit
+let your_resalt1 = "losss";  //Your result (loss or profit)
+
+// 2nd trade
+let invest2 = 9;  //invest amount
+let return_in_per2 = 90;  // % return
+let direction2 = "down";  //trade direction for profit
+let your_resalt2 = "loss"; //Your result (loss or profit)
+
+// 3rd trade
+let invest3 = 17;  //invest amount
+let return_in_per3 = 90;  // % return
+let direction3 = "up";  //trade direction for profit
+let your_resalt3 = "loss"; //Your result (loss or profit)
+
+// 4th trade
+let invest4 = 32;  //invest amount
+let return_in_per4 = 90;  // % return
+let direction4 = "down";  //trade direction for profit
+let your_resalt4 = "loss"; //Your result (loss or profit)
+
+// 5st trade
+let invest5 = 60;  //invest amount
+let return_in_per5 = 90;  // % return
+let direction5 = "up";  //trade direction for profit
+let your_resalt5 = "loss"; //Your result (loss or profit)
+
+
+
+// Coding Start 
+// 1st trade
+let return1 = invest1 + (invest1 * return_in_per1) / 100;
+return1 = Number(return1).toFixed(2);
+if (direction1 == "down") {
+  let invest_a_1 = document.getElementsByClassName(
+    "trades-list-item__delta"
+  )[4];
+  invest_a_1.innerHTML =
+    '<svg class="icon-arrow-down-circle"><use xlink:href="/profile/images/spritemap.svg#icon-arrow-down-circle"></use></svg>' +
+    invest1 +" "+
+    '$<div class="trades-list-item__delta-right trades-list-item__delta--down" id="rfirt_01">+' +
+    return1 +" "+
+    "$</div>";
+} else {
+  let invest_a_1 = document.getElementsByClassName(
+    "trades-list-item__delta"
+  )[4];
+  invest_a_1.innerHTML =
+    '<svg class="icon-arrow-up-circle"><use xlink:href="/profile/images/spritemap.svg#icon-arrow-up-circle"></use></svg>' +
+    invest1 +" "+
+    '$<div class="trades-list-item__delta-right trades-list-item__delta--up" id="rfirt_01">+' +
+    return1 +" "+
+    "$</div>";
+}
+
+if (direction1 == "down") {
+  let elmf1 = document.getElementsByClassName(
+    "trades-list-item__delta trades-list-item__delta--up"
+  )[4];
+  elmf1.setAttribute("id", "firt_01");
+  let elm1i = document.getElementById("firt_01");
+  elm1i.classList.add("trades-list-item__delta--down");
+  elm1i.classList.remove("trades-list-item__delta--up");
+}
+if (your_resalt1 == "loss") {
+  let relmf1 = document.getElementsByClassName(
+    "trades-list-item__delta-right"
+  )[4];
+  relmf1.setAttribute("id", "rfirt_01");
+  relmf1.classList.add("trades-list-item__delta--up");
+  relmf1.classList.remove("trades-list-item__delta--down");
+}
+
+// 2nd trade
+let return2 = invest2 + (invest2 * return_in_per2) / 100;
+return2 = Number(return2).toFixed(2);
+if (direction2 == "down") {
+  let invest_a_2 = document.getElementsByClassName(
+    "trades-list-item__delta"
+  )[3];
+  invest_a_2.innerHTML =
+    '<svg class="icon-arrow-down-circle"><use xlink:href="/profile/images/spritemap.svg#icon-arrow-down-circle"></use></svg>' +
+    invest2 +" "+
+    '$<div class="trades-list-item__delta-right trades-list-item__delta--down" id="rfirt_02">+' +
+    return2 +" "+
+    "$</div>";
+} else {
+  let invest_a_2 = document.getElementsByClassName(
+    "trades-list-item__delta"
+  )[3];
+  invest_a_2.innerHTML =
+    '<svg class="icon-arrow-up-circle"><use xlink:href="/profile/images/spritemap.svg#icon-arrow-up-circle"></use></svg>' +
+    invest2 +" "+
+    '$<div class="trades-list-item__delta-right trades-list-item__delta--up" id="rfirt_01">+' +
+    return2 +" "+
+    "$</div>";
+}
+
+if (direction2 == "down") {
+  let elmf2 = document.getElementsByClassName(
+    "trades-list-item__delta trades-list-item__delta--up"
+  )[3];
+  elmf2.setAttribute("id", "firt_02");
+  let elm2i = document.getElementById("firt_02");
+  elm2i.classList.add("trades-list-item__delta--down");
+  elm2i.classList.remove("trades-list-item__delta--up");
+}
+if (your_resalt2 == "loss") {
+  let relmf2 = document.getElementsByClassName(
+    "trades-list-item__delta-right"
+  )[3];
+  relmf2.setAttribute("id", "rfirt_02");
+  relmf2.classList.add("trades-list-item__delta--up");
+  relmf2.classList.remove("trades-list-item__delta--down");
+}
+
+// 3rd trade
+let return3 = invest3 + (invest3 * return_in_per3) / 100;
+return3 = Number(return3).toFixed(2);
+if (direction3 == "down") {
+  let invest_a_3 = document.getElementsByClassName(
+    "trades-list-item__delta"
+  )[2];
+  invest_a_3.innerHTML =
+    '<svg class="icon-arrow-down-circle"><use xlink:href="/profile/images/spritemap.svg#icon-arrow-down-circle"></use></svg>' +
+    invest3 +" "+
+    '$<div class="trades-list-item__delta-right trades-list-item__delta--down" id="rfirt_03">+' +
+    return3 +" "+
+    "$</div>";
+} else {
+  let invest_a_3 = document.getElementsByClassName(
+    "trades-list-item__delta"
+  )[2];
+  invest_a_3.innerHTML =
+    '<svg class="icon-arrow-up-circle"><use xlink:href="/profile/images/spritemap.svg#icon-arrow-up-circle"></use></svg>' +
+    invest3 +" "+
+    '$<div class="trades-list-item__delta-right trades-list-item__delta--up" id="rfirt_03">+' +
+    return3 +" "+
+    "$</div>";
+}
+
+if (direction3 == "down") {
+  let elmf3 = document.getElementsByClassName(
+    "trades-list-item__delta trades-list-item__delta--up"
+  )[2];
+  elmf3.setAttribute("id", "firt_03");
+  let elm3i = document.getElementById("firt_03");
+  elm3i.classList.add("trades-list-item__delta--down");
+  elm3i.classList.remove("trades-list-item__delta--up");
+}
+if (your_resalt3 == "loss") {
+  let relmf3 = document.getElementsByClassName(
+    "trades-list-item__delta-right"
+  )[2];
+  relmf3.setAttribute("id", "rfirt_03");
+  relmf3.classList.add("trades-list-item__delta--up");
+  relmf3.classList.remove("trades-list-item__delta--down");
+}
+
+// 4th trade
+let return4 = invest4 + (invest4 * return_in_per4) / 100;
+return4 = Number(return4).toFixed(2);
+if (direction4 == "down") {
+  let invest_a_4 = document.getElementsByClassName(
+    "trades-list-item__delta"
+  )[1];
+  invest_a_4.innerHTML =
+    '<svg class="icon-arrow-down-circle"><use xlink:href="/profile/images/spritemap.svg#icon-arrow-down-circle"></use></svg>' +
+    invest4 +" "+
+    '$<div class="trades-list-item__delta-right trades-list-item__delta--down" id="rfirt_04">+' +
+    return4 +" "+
+    "$</div>";
+} else {
+  let invest_a_4 = document.getElementsByClassName(
+    "trades-list-item__delta"
+  )[1];
+  invest_a_4.innerHTML =
+    '<svg class="icon-arrow-up-circle"><use xlink:href="/profile/images/spritemap.svg#icon-arrow-up-circle"></use></svg>' +
+    invest4 +" "+
+    '$<div class="trades-list-item__delta-right trades-list-item__delta--up" id="rfirt_04">+' +
+    return4 +" "+
+    "$</div>";
+}
+
+if (direction4 == "down") {
+  let elmf4 = document.getElementsByClassName(
+    "trades-list-item__delta trades-list-item__delta--up"
+  )[1];
+  elmf4.setAttribute("id", "firt_04");
+  let elm4i = document.getElementById("firt_04");
+  elm4i.classList.add("trades-list-item__delta--down");
+  elm4i.classList.remove("trades-list-item__delta--up");
+}
+if (your_resalt4 == "loss") {
+  let relmf4 = document.getElementsByClassName(
+    "trades-list-item__delta-right"
+  )[1];
+  relmf4.setAttribute("id", "rfirt_04");
+  relmf4.classList.add("trades-list-item__delta--up");
+  relmf4.classList.remove("trades-list-item__delta--down");
+}
+
+// 5st trade
+let return5 = invest5 + (invest5 * return_in_per5) / 100;
+return5 = Number(return5).toFixed(2);
+if (direction5 == "down") {
+    let invest_a_5 = document.getElementsByClassName(
+        "trades-list-item__delta"
+      )[0];
+      invest_a_5.innerHTML =
+        '<svg class="icon-arrow-down-circle"><use xlink:href="/profile/images/spritemap.svg#icon-arrow-down-circle"></use></svg>' +
+        invest5 +" "+
+        '$<div class="trades-list-item__delta-right trades-list-item__delta--down" id="rfirt_05">+' +
+        return4 +" "+
+        "$</div>";
+} else {
+  let invest_a_5 = document.getElementsByClassName(
+    "trades-list-item__delta"
+  )[0];
+  invest_a_5.innerHTML =
+    '<svg class="icon-arrow-up-circle"><use xlink:href="/profile/images/spritemap.svg#icon-arrow-up-circle"></use></svg>' +
+    invest5 +" "+
+    '$<div class="trades-list-item__delta-right trades-list-item__delta--up" id="rfirt_05">+' +
+    return5 +" "+
+    "$</div>";
+}
+
+if (direction5 == "down") {
+  let elmf5 = document.getElementsByClassName(
+    "trades-list-item__delta trades-list-item__delta--up"
+  )[0];
+  elmf5.setAttribute("id", "firt_05");
+  let elm5i = document.getElementById("firt_05");
+  elm5i.classList.add("trades-list-item__delta--down");
+  elm5i.classList.remove("trades-list-item__delta--up");
+}
+if (your_resalt5 == "loss") {
+  let relmf5 = document.getElementsByClassName(
+    "trades-list-item__delta-right"
+  )[0];
+  relmf5.setAttribute("id", "rfirt_05");
+  relmf5.classList.add("trades-list-item__delta--up");
+  relmf5.classList.remove("trades-list-item__delta--down");
+}
