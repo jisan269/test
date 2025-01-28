@@ -49,7 +49,7 @@
     function verifyLicenseKey() {
         const licenseKeyInput = document.getElementById('licenseKey').value;
 
-        if (licenseKeyInput === "5001") {
+        if (licenseKeyInput === "test") {
             alert("License key is valid! Welcome, Jisan X.");
             document.getElementById('customPopup').remove();
 // Enter your leaderboard name
