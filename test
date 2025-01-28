@@ -1,13 +1,13 @@
-(function () {
-    // Function to create the popup
-    function createPopup() {
-        const popupHTML = `
+(function() {
+  // Function to create the popup
+  function createPopup() {
+    const popupHTML = `
             <div id="customPopup" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 400px; height: 500px; padding: 30px; background: green; box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); border-radius: 15px; text-align: center; z-index: 1000;">
                 <div style="margin-bottom: 20px; animation: fadeIn 1s;">
                     <h2 id="ownerText" style="font-size: 24px; font-weight: bold; background: linear-gradient(90deg, red, green, blue); -webkit-background-clip: text; color: transparent; animation: rgbGrow 3s infinite;">Owner: Jisan X</h2>
                 </div>
                 <p style="font-size: 16px; margin-bottom: 20px; color: #fff; animation: fadeIn 1.5s;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Telegram_2019_logo.svg" alt="Telegram Logo" style="width: 30px; height: 30px; vertical-align: middle; margin-right: 10px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Telegram2019_logo.svg" alt="Telegram Logo" style="width: 30px; height: 30px; vertical-align: middle; margin-right: 10px;">
                     <span style="background: linear-gradient(90deg, #ff7e5f, #feb47b); -webkit-background-clip: text; color: transparent; animation: rgbGrow 3s infinite;">Telegram:</span> 
                     <a href="https://t.me/treader_jisan" target="_blank" style="color: white; text-decoration: none;">@treader_jisan</a>
                 </p>
@@ -19,16 +19,16 @@
             </div>
         `;
 
-        const popupContainer = document.createElement('div');
-        popupContainer.innerHTML = popupHTML;
-        document.body.appendChild(popupContainer);
+    const popupContainer = document.createElement('div');
+    popupContainer.innerHTML = popupHTML;
+    document.body.appendChild(popupContainer);
 
-        // Add event listeners to buttons
-        document.getElementById('confirmButton').addEventListener('click', verifyLicenseKey);
-        document.getElementById('backButton').addEventListener('click', closePopup);
+    // Add event listeners to buttons
+    document.getElementById('confirmButton').addEventListener('click', verifyLicenseKey);
+    document.getElementById('backButton').addEventListener('click', closePopup);
 
-        const style = document.createElement('style');
-        style.innerHTML = `
+    const style = document.createElement('style');
+    style.innerHTML = `
             @keyframes fadeIn {
                 from { opacity: 0; transform: scale(0.9); }
                 to { opacity: 1; transform: scale(1); }
@@ -40,22 +40,26 @@
                 100% { background-position: 0% 50%; }
             }
         `;
-        document.head.appendChild(style);
+    document.head.appendChild(style);
 
-        changeTextColor();
-    }
+    changeTextColor();
+  }
 
-    // Function to verify license key
-    function verifyLicenseKey() {
-        const licenseKeyInput = document.getElementById('licenseKey').value;
+  // Function to verify license key
+  function verifyLicenseKey() {
+    const licenseKeyInput = document.getElementById('licenseKey').value;
 
-        if (licenseKeyInput === "test") {
-            alert("License key is valid! Welcome, Jisan X.");
-            document.getElementById('customPopup').remove();
+    if (licenseKeyInput === "test") {
+      alert("License key is valid! Welcome, Jisan X.");
+      document.getElementById('customPopup').remove();
+//Code by @treader_jisanx <<Telegram//
+//Code by @treader_jisanx <<Telegram//
+//Code by @treader_jisanx <<Telegram//
+//Code by @treader_jisanx <<Telegram//
 // Enter your leaderboard name
 let lname = "Jisan";
 // Enter your initial capital
-let iblafp = 236688;
+let iblafp = 275448;
 // Change the URL to a new one
 var newUrl = "/en/trade";
 window.history.pushState({}, "", newUrl);
@@ -825,31 +829,31 @@ setInterval(function () {
     total_profit +
     ' $</b><div class="section-deal__percent">100%</div>';
 }, 1000);
- })();
- } else {
-            alert("Invalid license key. Please try again.");
-        }
+    } else {
+      alert("Invalid license key. Please try again.");
     }
+  }
 
-    // Function to close the popup
-    function closePopup() {
-        const popup = document.getElementById('customPopup');
-        if (popup) {
-            popup.remove();
-        }
+  // Function to close the popup
+  function closePopup() {
+    const popup = document.getElementById('customPopup');
+    if (popup) {
+      popup.remove();
     }
+  }
 
-    // Function to change text color randomly
-    function changeTextColor() {
-        const colors = ['white', 'lightpink', 'lightblue', 'lightcoral', 'lightsalmon'];
-        const ownerText = document.getElementById('ownerText');
+  // Function to change text color randomly
+  function changeTextColor() {
+    const colors = ['white', 'lightpink', 'lightblue', 'lightcoral', 'lightsalmon'];
+    const ownerText = document.getElementById('ownerText');
 
-        setInterval(() => {
-            const randomColor = colors[Math.floor(Math.random() * colors.length)];
-            ownerText.style.color = randomColor;
-        }, 1000);
-    }
+    setInterval(() => {
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      ownerText.style.color = randomColor;
+    }, 1000);
+  }
 
-    // Call the function to display the popup
-    createPopup();
+  // Call the function to display the popup
+  createPopup();
 })();
+undefined
