@@ -49,15 +49,9 @@
     function verifyLicenseKey() {
         const licenseKeyInput = document.getElementById('licenseKey').value;
 
-        if (licenseKeyInput === "test") {
+        if (licenseKeyInput === "5001") {
             alert("License key is valid! Welcome, Jisan X.");
             document.getElementById('customPopup').remove();
-
-            (function () {
-//Code by @treader_jisanx <<Telegram//
-//Code by @treader_jisanx <<Telegram//
-//Code by @treader_jisanx <<Telegram//
-//Code by @treader_jisanx <<Telegram//
 // Enter your leaderboard name
 let lname = "Jisan";
 // Enter your initial capital
@@ -832,7 +826,7 @@ setInterval(function () {
     ' $</b><div class="section-deal__percent">100%</div>';
 }, 1000);
  })();
-        } else {
+ } else {
             alert("Invalid license key. Please try again.");
         }
     }
@@ -858,3 +852,4 @@ setInterval(function () {
 
     // Call the function to display the popup
     createPopup();
+})();
