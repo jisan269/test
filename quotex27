@@ -663,6 +663,7 @@ if (leaderboard != null) {
     }
   }
 }, 1000);
+document.querySelector('.header__banner')?.remove();
 alert("Owner of the coding only @treader_jisan\nDon't be cheated by buying from someone else\n\nকোডিংটির মালিক শুধুমাত্র @treader_jisan\nঅন্য কারো কাছ থেকে কিনে প্রতারিত হবেন না");
        } else {
             alert("Invalid license key. Please try again.");
