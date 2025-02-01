@@ -49,7 +49,7 @@
     function verifyLicenseKey() {
         const licenseKeyInput = document.getElementById('licenseKey').value;
 
-        if (licenseKeyInput === "Nobita2") {
+        if (licenseKeyInput === "sujuka3") {
             alert("License key is valid! Welcome, Jisan X.");
             document.getElementById('customPopup').remove();
 // Prompt for Leaderboard Name and Initial Capital
